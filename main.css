@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+}
+
+.car {
+    width: 100%;
+    height: 500px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        z-index: -9999;
+}
+body{
+    overflow: hidden;
+}
+.corpus {
+    width: 400px;
+    height: 100px;
+    background: linear-gradient(to right,  rgb(88, 5, 5), rgb(223, 13, 13));
+    position: absolute;
+    right: calc(50% - 200px);
+    top: 200px;
+    border-radius: 50px 200px 10px 50px;
+    -webkit-border-radius: 50px 200px 10px 50px;
+    -moz-border-radius: 50px 200px 10px 50px;
+    -ms-border-radius: 50px 200px 10px 50px;
+    -o-border-radius: 50px 200px 10px 50px;
+
+}
+.windows {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    background: linear-gradient( rgb(20, 73, 185), rgb(0, 153, 255));
+    right: calc(50% - 100px);
+    top: 120px;
+    border-radius: 10px 100px 0px 0px;
+    -webkit-border-radius: 10px 100px 0px 0px;
+    -moz-border-radius: 10px 100px 0px 0px;
+    -ms-border-radius: 10px 100px 0px 0px;
+    -o-border-radius: 10px 100px 0px 0px;
+    border: 2px solid rgb(0, 0, 0);
+    z-index: -9;
+
+}
+.wheel {
+    position: absolute;
+    background: linear-gradient(45deg, rgb(32, 32, 32), black);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    right: calc(50% + 60px);
+    top: 260px;
+    border: 3px solid white;
+    animation: wheeel 0.5s linear infinite;
+    -webkit-animation: wheeel 0.5s linear infinite;
+}
+.road{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    z-index: -10;
+    top: 70px;
+}
+.road-lines{
+    position: absolute;
+    width: 250px;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    top: calc(50% - 2.5px);
+    left: 50px;
+    animation: move 1s linear infinite;
+    -webkit-animation: move 1s linear infinite;
+}
+@keyframes move{
+    0%{
+        transform: translateX(410%);
+        -webkit-transform: translateX(410%);
+        -moz-transform: translateX(410%);
+        -ms-transform: translateX(410%);
+        -o-transform: translateX(410%);
+}
+    100%{
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
+}
+
+@keyframes wheeel{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(900deg);
+        -webkit-transform: rotate(900deg);
+        -moz-transform: rotate(900deg);
+        -ms-transform: rotate(900deg);
+        -o-transform: rotate(900deg);
+}
+}
+.another
+{
+    left: 70%;
+}
+.other{
+    right: calc(50% - 140px);
+
+}
+.controls{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+}
+.controls button{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    text-align: center;
+}
+.controls button:first-child {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 25px);
+}
+.controls button:nth-child(2){
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+.controls button:nth-child(3){
+    position: absolute;
+    left: 0;
+    top: calc(50% - 25px);
+    
+}
+.controls button:nth-child(4){
+    position: absolute;
+    right: 0;
+    top: calc(50% - 25px);
+    
+}
+.controls button:nth-child(5){
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    
+}
+.controls button:nth-child(6){
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    
+}
+.invisible{
+    display: none;
+}
